@@ -17,7 +17,7 @@
     .student-name {
         grid-row: 1/2;
         grid-column: 2/5;
-        font-size: 40px;
         margin: auto;
+        font-size: 40px;
     }
 }

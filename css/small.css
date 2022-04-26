@@ -1,9 +1,9 @@
 body {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 600px;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
     background: url("../images/rebg2.jpg") rgba(4, 5, 20, 0.753);
     background-size: cover;
     color: white;
@@ -26,25 +26,27 @@ body {
 
 .header-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    height: 9rem;
+    grid-template-rows: 80% 1fr;
+    height: 50vh;
     border-radius: 7px;
     overflow: hidden;
     align-items: center;
 }
 
 .student-img {
-    height: 100%;
-    width: 100%;
-    grid-column: 1/2;
+    justify-self: center;
+    border-radius: 7px;
+    height: 80%;
+    width: 70%;
+    grid-row: 1/5;
 }
 
 .student-name {
-    grid-column: 2/5;
+    grid-row: 5/6;
     text-align: center;
     font-weight: 100;
-    font-size: 35px;
+    font-size: larger;
+    margin-top: 0px;
 }
 
 .work-list {
@@ -55,6 +57,7 @@ body {
     font-style: italic;
     color: rgb(204, 204, 204);
 }
+
 a {
     color: rgb(82, 177, 255);
     text-decoration: none;
@@ -81,14 +84,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 500px) {
-    .student-img {
-        display: none;
-    }
-
-    .student-name {
-        grid-column: 1/5;
-    }
 }

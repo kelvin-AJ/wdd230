@@ -2,7 +2,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
     max-width: 600px;
-    font-family: sans-serif;
+    font-family: 'Open Sans',
+    sans-serif;
     background: url("../images/rebg2.jpg") rgba(4, 5, 20, 0.753);
     background-size: cover;
     color: white;

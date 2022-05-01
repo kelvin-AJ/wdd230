@@ -6,8 +6,8 @@ const foooterP = document.querySelector(".footer-p")
 
 const lessons = [{
     number : "02",
-    title : "Title",
-    href : "####"
+    title : "Design Principles",
+    href : "lesson_02\\design-principles.html"
 },
 {
     number : "03",

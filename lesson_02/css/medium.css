@@ -1,0 +1,14 @@
+@media (min-width: 32.5em) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .principle-main {
+        grid-template-rows: 2rem 2rem 1fr;
+    }
+
+    .fitts-grid {
+        grid-column: 1/3;
+    }
+}

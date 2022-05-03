@@ -12,47 +12,47 @@ const lessons = [{
 {
     number : "03",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "04",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "05",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "06",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "07",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "08",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "09",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "10",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 {
     number : "11",
     title : "Title",
-    href : "####"
+    href : "#"
 },
 ];
 

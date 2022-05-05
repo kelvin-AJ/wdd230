@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    background: rgb(182, 182, 182);
+}
+
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+
+.header-grid {
+    background: url("../images/background.jpg") rgba(13, 12, 27, 0.938);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0B7AB8;
+    font-family: 'Inconsolata', monospace;
+    padding: 10rem 1rem 4rem 1rem;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#name {
+    color: #FFB30F;
+}
+
+.grey-text {
+    color: #9da7b4;
+}
+
+nav ul {
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+    background-color: #45494E;
+    height: 3rem;
+    padding: 0px;
+}
+
+li {
+    font-family: 'Abel', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 0.8rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 auto;
+}
+
+main {
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+.active {
+    color: #FFB30F;
+}
+
+li:hover {
+    color: #FFB30F;
+    background-color: #0B7AB8;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+    font-size: large;
+    padding: 1rem;
+}
+
+.footer-grid {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    background-color: #45494E;
+    padding: 0.5rem;
+}

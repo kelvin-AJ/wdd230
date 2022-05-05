@@ -12,7 +12,7 @@ const lessons = [{
 {
     number : "03",
     title : "Title",
-    href : "#"
+    href : "lesson3\\index.html"
 },
 {
     number : "04",

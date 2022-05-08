@@ -11,7 +11,7 @@ const lessons = [{
 },
 {
     number : "03",
-    title : "Title",
+    title : "Website Planning",
     href : "lesson3\\index.html"
 },
 {

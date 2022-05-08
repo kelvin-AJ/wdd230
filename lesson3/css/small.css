@@ -1,0 +1,11 @@
+@media only screen and (max-width:400px) {
+    nav ul {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .personas,
+    .colors-grid {
+        grid-template-columns: 1fr;
+    }
+}

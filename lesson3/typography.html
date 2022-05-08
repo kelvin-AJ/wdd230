@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/small.css">
 </head>
 
 <body>
@@ -23,28 +23,30 @@
         </header>
         <nav>
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="target-audience.html">Audience</a></li>
                 <li><a href="color-scheme.html">Color Scheme</a></li>
-                <li><a href="typography.html">Typography</a></li>
+                <li><a href="typography.html" class="active">Typography</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Site Logo:</h2>
-            <img src="images/logo-removebg.png" alt="Logo for island of victoria chamber of commerce">
-            <h2>Site Purpose: </h2>
-            <p>The purpose of the Island of Victoia Chamber of Commerce website is to provide a platform where business owners and
-                entrepreneurs in the community's business sector can join the chamber of commerce so as to improve visibility and
-                credibility. and to also provide valuable resources and relationships that would help businesses thrive.</p>
-            <h2>Site Domain Name: </h2>
-            <p>islandofvictoria.com</p>
-
+            <h2>Typography:</h2>
+            <div class="colors-grid">
+                <div class="color">
+                    <h3 class="c-head primary-1-color"> 'Inconsolata'</h3>
+                    <p>This font is used in the logo and would be used for h1 and h2 headings</p>
+                </div>
+                <div class="color">
+                    <h3 class="c-head primary-2-color">'Abel'</h3>
+                    <p>This font would be used for everything else.</p>
+                </div>
+            </div>
         </main>
         <footer class="footer-grid">
             <!-- JS -->
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

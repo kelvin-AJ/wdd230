@@ -43,11 +43,11 @@ nav ul {
     padding: 0px;
 }
 
-li {
+nav li {
+    display: grid;
     font-family: 'Abel', sans-serif;
     font-size: larger;
     font-weight: bold;
-    padding-top: 0.8rem;
     width: 100%;
     text-align: center;
     color: white;
@@ -56,7 +56,11 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-    margin: 0 auto;
+    display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 1.4rem;
+        align-self: center;
 }
 
 main {
@@ -68,24 +72,79 @@ main {
     color: #FFB30F;
 }
 
-li:hover {
+nav li:hover {
     color: #FFB30F;
     background-color: #0B7AB8;
 }
 
-h2 {
+h2,
+h3 {
     font-family: 'Inconsolata', monospace;
+}
+p,
+.footer-grid,
+.personas {
+    font-family: 'Abel', sans-serif;
+}
+
+.persona-main {
+    padding: 0.5rem;
 }
 
 p {
-    font-family: 'Abel', sans-serif;
     font-size: large;
     padding: 1rem;
 }
 
+.personas {
+    display: grid;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.persona,
+.color {
+    border: 1px solid #45494E;
+    border-radius: 3px;
+
+}
+
+.persona-img {
+    width: 100%;
+    height: 10rem
+}
+
+.colors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.c-head {
+    margin: 0px;
+    height: 1rem;
+    padding: 1rem;
+}
+
+.primary-1-color {
+    background-color: #0B7AB8;
+}
+
+.primary-2-color {
+    background-color: #45494E;
+    color: whitesmoke;
+}
+
+.seconday-color {
+    background-color: whitesmoke;
+}
+
+.accent-color {
+    background-color: #FFB30F;
+}
 .footer-grid {
     text-align: center;
-    font-family: 'Abel', sans-serif;
     color: white;
     background-color: #45494E;
     padding: 0.5rem;

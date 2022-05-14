@@ -16,8 +16,8 @@ const lessons = [{
 },
 {
     number : "04",
-    title : "Title",
-    href : "#"
+    title : "Chamber Home Page Build",
+    href : "chamber\\index.html"
 },
 {
     number : "05",

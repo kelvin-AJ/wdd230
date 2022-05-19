@@ -21,8 +21,8 @@ const lessons = [{
 },
 {
     number : "05",
-    title : "Title",
-    href : "#"
+    title : "DOM Manipulation",
+    href : "bom\\bom.html"
 },
 {
     number : "06",

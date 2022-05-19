@@ -21,6 +21,7 @@ h2 {
     color: whitesmoke;
     height: min-content;
     font-family: 'Inconsolata', monospace;
+    padding: .8rem;
     padding-bottom: 1rem;
 }
 
@@ -137,7 +138,7 @@ button :nth-child(2) {
     font-family: 'Abel', sans-serif;
 }
 
-.placeholder-spotlights:nth-child(3) {
+.spot-3 {
     display: none;
 }
 

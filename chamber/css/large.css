@@ -85,4 +85,7 @@
         height: 100%;
         margin: 0px;
     }
+        .spot-3 {
+            display: block;
+        }
 }

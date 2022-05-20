@@ -20,9 +20,14 @@ const lessons = [{
     href : "chamber\\index.html"
 },
 {
-    number : "05",
+    number : "05a",
     title : "DOM Manipulation",
     href : "bom\\bom.html"
+},
+{
+    number : "05b",
+    title : "Chamber Home Page complete",
+    href : "chamber\\index.html"
 },
 {
     number : "06",

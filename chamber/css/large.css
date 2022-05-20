@@ -4,7 +4,13 @@
         grid-template-rows: 1fr fit-content;
         height: fit-content;
     }
-
+    #header-date{
+        padding: 5px;
+    }
+    main{
+        padding:10px;
+        grid-gap: 20px;
+    }
     .logo-info {
         width: fit-content;
         margin-right: 5rem;
@@ -51,41 +57,68 @@
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
+        width: 110%;
     }
 
     .join {
         grid-column: 1/2;
         grid-row: 3/4;
+        width: 85%;
+    }
+    .join button{
+        display: block;
     }
 
-    .hero {
+    .hero{
         height: 93%;
         grid-column: 2/4;
         grid-row: 1/3;
+        
     }
-
+    .hero h2{
+        font-size: 3rem;
+    }
+    .hero button{
+        display: block;
+        position: absolute;
+        font-size: 1.5rem;
+        top: 100%;
+        right: 30%;
+    }
     .news {
         grid-column: 2/4;
+        width: 100%;
         grid-row: 3/4;
     }
 
     .placeholder-spotlights {
+        width: 90%;
         height: 100%;
         grid-column: 4/5;
         grid-row: 1/4;
         padding: 10px;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
         margin: 2px;
         height: 96%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .spotlight {
+        margin-top: 1rem;
         width: 100%;
         height: 100%;
         margin: 0px;
     }
-        .spot-3 {
-            display: block;
+        #spot-3 {
+        display: block;
+        display: grid;
+        justify-items: center;
+        background: whitesmoke;
+        color: #010d14;
+        width: auto;
+        height: fit-content;
+        box-shadow: 0 0 5px white;
+        padding-bottom: 1rem;
         }
 }

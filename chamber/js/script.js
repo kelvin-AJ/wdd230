@@ -2,7 +2,8 @@ const navBtn = document.querySelector("#nav-btn");
 const navEl = document.querySelector("nav");
 const dateEl = document.querySelector("#header-date");
 const footerEl = document.querySelector("#footer-year")
-const modEl = document.querySelector(".last-modification")
+const modEl = document.querySelector(".last-modification");
+const banner = document.querySelector(".banner");
 
 navBtn.addEventListener("click", function(){
     navEl.classList.toggle("open")
@@ -33,3 +34,9 @@ let modsecond = lastModifiedDate.getSeconds()
 let modhour = lastModifiedDate.getHours(); 
 
 modEl.innerHTML = `Last Updated: ${modMonth}/${modDay}/${modYear} ${modhour}:${modminute}:${modsecond}`
+
+if(curDay() == "Monday" || curDay() == "Tuesday"){
+    banner.classList.remove("hide")
+}else{
+    banner.classList.add("hide")
+}

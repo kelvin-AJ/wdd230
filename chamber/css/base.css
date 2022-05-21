@@ -191,6 +191,7 @@ button :nth-child(2) {
 .block {
     color: gray;
     height: 15rem;
+    width: 85%;
     margin: 10px;
     padding: 1rem;
     font-family: 'Abel', sans-serif;
@@ -198,6 +199,7 @@ button :nth-child(2) {
 }
 
 .placeholder-spotlights {
+
     background: linear-gradient(#289fe4, #042b42);
     color: gray;
     height: fit-content;

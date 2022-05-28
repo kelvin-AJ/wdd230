@@ -19,7 +19,7 @@
 
 <body>
     <header class="header-grid">
-        <div class="logo-info"><img class="logo-img" src="images/icon.png" alt="island of victoria chamber logo">
+        <div class="logo-info"><img class="logo-img" src="images/icon.webp" alt="island of victoria chamber logo">
             <div id="name">
                 <h1>ISLAND OF VICTORIA</h1>
                 <h2>Chamber of Commerce</h2>
@@ -44,9 +44,19 @@
         <div class="banner hide"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
     </header>
     <main>
-        <div class="block hero">
+        <div class="block hero" id="hero">
+            <picture id="heroPhoto">
+                <img src="images/hero-base.jpg" alt="Chamber members in meeting"
+                width="100%"
+                srcset="images/hero-small.jpg 370w,
+                        images/hero-medium.jpg 820w,
+                        images/hero-large.jpg 1000w,"
+                sizes="(max-width: 320px) 370px,
+                       (max-width: 820px) 800px,
+                       1020px">
+            </picture>
             <h2>Welcome to the <span>Island of Victoria</span></h2>
-            <button>Join the Chamber</button>
+            <button id="join-btn">Join the Chamber</button>
         </div>
         <div class="block event sub">
             <h2>Ribbon Cutting</h2>
@@ -55,11 +65,11 @@
         </div>
         <div class="block weather sub">
             <h2>Weather</h2>
-            <img src="images/sunny.png" alt="sunny icon">
-            <h3>28 °C</h3>
+            <img src="images/sunny.webp" alt="sunny icon">
+            <h3><span id="temp">-2</span>°C</h3>
             <hr>
-            <p>Wind Speed:<span>2.5 km/h</span></p>
-            <p>Wind Chill:<span>N/A</span></p>
+            <p>Wind Speed:<span id="wind-speed">7</span>km/h</p>
+            <p>Wind Chill:<span id="wind-chill">N/A</span></p>
         </div>
         <div class="block join">
             <button>Join Us!</button>
@@ -75,21 +85,21 @@
         <div class="placeholder-spotlights" id="spotlights">
             <div class="spotlight">
                 <h2>Arnegy</h2>
-                <img src="images/arnegy.png" alt="arnegy logo">
+                <img src="images/arnegy.webp" alt="arnegy logo">
                 <hr>
                 <p>info@arnegyteam.com</p>
                 <p>+234 123 -1234 | Website</p>
             </div>
             <div class="spotlight">
                 <h2>Alibert</h2>
-                <img src="images/alibert.png" alt="arnegy logo">
+                <img src="images/alibert.webp" alt="arnegy logo">
                 <hr>
                 <p>info@alibertteam.com</p>
                 <p>+234 123 -1234 | Website</p>
             </div>
             <div class="spotlight spot-3" id="spot-3">
                 <h2>Gatemark</h2>
-                <img src="images/gatemark.png" alt="arnegy logo">
+                <img src="images/gatemark.webp" alt="arnegy logo">
                 <hr>
                 <p>info@gatemarkgroup.com</p>
                 <p>+234 123 -1234 | Website</p></div>
@@ -98,7 +108,7 @@
     <footer>
         <div class="first-half">
             <div class="first-half-1">
-                <img class="footer-logo logo-img" src="images/icon.png" alt="Island of victoria logo">
+                <img class="footer-logo logo-img" src="images/icon.webp" alt="Island of victoria logo">
                 <h2>ISLAND OF VICTORIA Chamber</h2>
                 <span id="address">565 2nd, Victoria Island, Lagos. 10231</span>
             </div>
@@ -120,6 +130,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>

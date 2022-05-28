@@ -31,8 +31,8 @@ const lessons = [{
 },
 {
     number : "06",
-    title : "Title",
-    href : "#"
+    title : "Responsive Design",
+    href : "chamber\\index.html"
 },
 {
     number : "07",

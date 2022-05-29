@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             <a href="www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>
             <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
         </div>
-        <button id="nav-btn"><span>&#9776</span><span>X</span></button>
+        <button id="nav-btn"><span>&#9776;</span><span>X</span></button>
         <nav>
             <ul id="navUl">
                 <li><a href="#">Discover</a></li>
@@ -45,17 +46,13 @@
     </header>
     <main>
         <div class="block hero" id="hero">
-            <picture id="heroPhoto">
-                <img src="images/hero-base.jpg" alt="Chamber members in meeting"
-                width="100%"
-                srcset="images/hero-small.jpg 370w,
-                        images/hero-medium.jpg 820w,
-                        images/hero-large.jpg 1000w,"
-                sizes="(max-width: 320px) 370px,
-                       (max-width: 820px) 800px,
-                       1020px">
+            <picture id="heroPhoto" width="100vw">
+               <source media="(min-width: 1000px)" srcset="images/hero-large.jpg">
+               <source media="(min-width: 600px)" srcset="images/hero-medium.jpg">
+               <source media="(min-width: 300px)" srcset="images/hero-small.jpg">
+                <img src="images/hero-base.jpg" alt="Chamber members in meeting">
             </picture>
-            <h2>Welcome to the <span>Island of Victoria</span></h2>
+            <h2>Welcome to the <br/><span>Island of Victoria</span></h2>
             <button id="join-btn">Join the Chamber</button>
         </div>
         <div class="block event sub">

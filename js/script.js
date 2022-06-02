@@ -36,8 +36,8 @@ const lessons = [{
 },
 {
     number : "07",
-    title : "Title",
-    href : "#"
+    title : "Lazy Loading",
+    href : "lesson_07\\lazyload.html"
 },
 {
     number : "08",

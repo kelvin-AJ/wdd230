@@ -40,6 +40,11 @@ const lessons = [{
     href : "lesson_07\\lazyload.html"
 },
 {
+    number : "07b",
+    title : "Discover Page",
+    href : "chamber\\discover.html"
+},
+{
     number : "08",
     title : "Title",
     href : "#"

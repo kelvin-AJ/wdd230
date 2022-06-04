@@ -4,13 +4,20 @@ const dateEl = document.querySelector("#header-date");
 const footerEl = document.querySelector("#footer-year")
 const modEl = document.querySelector(".last-modification");
 const banner = document.querySelector(".banner");
+const visitString = document.querySelector("#visit-string")
+const curDate = new Date();
+const now = Math.floor(curDate/8.64e7)
+
+localStorage.setItem("lastDay", now)
+
+
+
 
 navBtn.addEventListener("click", function(){
     navEl.classList.toggle("open")
     navBtn.classList.toggle("open")
 });
 
-const curDate = new Date()
 const curDay = function(){
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     return days[curDate.getDay()]}
@@ -40,3 +47,18 @@ if(curDay() == "Monday" || curDay() == "Tuesday"){
 }else{
     banner.classList.add("hide")
 }
+
+
+// Last Visit
+window.addEventListener("load", () => {
+    let dayText;
+    const today = Math.floor(curDate/8.64e7);
+    const formerday = Number(localStorage.getItem("lastDay"));
+    const daydiff = today - formerday
+    if(daydiff > 1){
+        dayText = `${Math.round(daydiff)} days ago`
+    }else{
+        dayText = "This is your first Visit"
+    }
+    visitString.textContent = dayText
+});

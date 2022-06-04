@@ -11,7 +11,6 @@ const loadPreferences = {
     
 }
 
-
 if("IntersectionObserver" in window) {
     console.log("Observer works")
     const observer = new IntersectionObserver((items, observer) => {

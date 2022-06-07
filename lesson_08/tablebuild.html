@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="colgroup" colspan="3"><h2>ACME Wildwest</h2></th>
+            </tr>
+            <tr>
+                <th scope="col"><h2>Period</h2></th>
+                <th scope="col"><h2>Sales</h2></th>
+                <th scope="col"><h2>Sales Goal</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>August</td>
+                <td>$3,590</td>
+                <td>$4,000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>$4,420</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>$4,870</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>$8,610</td>
+                <td id="selected">$7,500</td>
+            </tr>
+            <tr>
+                <td>Black Friday</td>
+                <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>$6,820</td>
+                <td>$7,500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="message" colspan="3"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        const message = document.querySelector("#message")
+        const date = new Date()
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+
+        message.textContent = `Complied ${month}.${day}.${year} by Kelvin`
+    </script>
+</body>
+</html>

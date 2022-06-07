@@ -46,8 +46,8 @@ const lessons = [{
 },
 {
     number : "08",
-    title : "Title",
-    href : "#"
+    title : "HTML Tables",
+    href : "lesson_08\\tablebuild.html"
 },
 {
     number : "09",

@@ -50,6 +50,11 @@ const lessons = [{
     href : "lesson_08\\tablebuild.html"
 },
 {
+    number : "08b",
+    title : "HTML Froms",
+    href : "chamber\\join.html"
+},
+{
     number : "09",
     title : "Title",
     href : "#"

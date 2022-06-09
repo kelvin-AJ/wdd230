@@ -306,7 +306,7 @@ button span:hover {
     transform:translateY(0rem);
 }
 
-/*  */
+/* Discover */
 .discover-intro{
     grid-column: 1/-1;
 }
@@ -332,4 +332,78 @@ main #gallery{
 
 #gallery .photo .info{
     padding: 1rem;
+}
+
+/* Join */
+#thanks{
+    font-size: 10vw;
+    text-align: center;
+}
+.abel-text span#orange{
+    color: #FFB30F;
+}
+
+.main-join-area{
+    display: grid;
+    justify-items: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100vw;
+    max-width: 40rem;
+}
+form{
+    
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90vw;
+    box-shadow: 0 0 10px grey;
+}
+
+.hy{
+    color: #ff2b0f;
+}
+fieldset{
+    border-radius: 3px;
+    border:1px solid #042b42 ;
+    width: 83vw;
+    margin-bottom: 2rem;
+}
+legend{
+    padding: 0.4rem;
+    font-weight: bolder;
+}
+.block-text, .block-input{
+    display: block;
+}
+label{
+    height: 5rem;
+}
+.block-radio{
+    display: block;
+   height: min-content;
+   padding: 10px;
+} 
+.block-input{
+    background-color: rgba(177, 177, 177, 0.199);
+    width: 98%;
+    border: none;
+    min-height: 2.5rem;
+    border-bottom: 2px solid #FFB30F;
+}
+.block-input:focus{
+    outline: none;
+    border-bottom: 2px solid #088dda;
+    background-color: #6cc5f81e;
+}
+
+.join-btn{
+    color: #FFB30F;
+    background-color: #042b42;
+    border: none;
+    height: 4rem;
+    width: 100%;
+}
+.join-btn:hover{
+    background-color: #010d14;
 }

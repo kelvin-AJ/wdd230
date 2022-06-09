@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="description" content="Island Of victoria chamber of commerce Discover page">
+    <title>Island Of Victoria</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-grid">
+        <div class="logo-info"><img class="logo-img" src="images/icon.webp" alt="island of victoria chamber logo">
+            <div id="name">
+                <h1>ISLAND OF VICTORIA</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>
+            <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
+        </div>
+        <button id="nav-btn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="navUl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="header-date">
+            <!-- JS! -->
+        </div>
+        <div class="banner hide"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+    </header>
+    <main>
+        <div class="main-join-area">
+        <h1 class="abel-text">Join us at Island of Victoria!</h1>
+        <p class="abel-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident voluptatibus nisi unde necessitatibus totam nemo laboriosam, natus perferendis at inventore fuga reprehenderit voluptatum! Hic quam est saepe delectus aperiam?
+        </p>
+        <form class="abel-text form" method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label class="block-text">First Name<span class="hy">*</span>
+                <input class="block-input" type="text" name="fname" required></label>
+                <label class="block-text">Last Name<span class="hy">*</span>
+                <input class="block-input" type="text" name="lname" required></label>
+                <label class="block-text">Business Position
+                <input class="block-input" type="text" name="Position"
+                title="Can only include alpha characters, hyphens, and spaces and must contain a minimum of 7 characters" pattern="[A-Za-z -]{7,}"></label>
+                <label class="block-text">Email<span class="hy">*</span>
+                <input placeholder=" someone@email.com" class="block-input" type="email" name="email" required></label>
+                <label class="block-text">Telephone<span class="hy">*</span>
+                <input class="block-input" type="tel" name="phone" required></label>
+                <label class="block-text">Business Name/Title<span class="hy">*</span>
+                <input class="block-input" name="business" type="text" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Membership Level</div>
+                <label  class="block-radio"><input type="radio" name="membership" value="np"> NP Membership</label>
+                <label  class="block-radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label  class="block-radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label  class="block-radio"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </fieldset>
+            <label  class="block-text">
+                Business Description
+                <textarea id="description" class="block-input"></textarea>
+            </label>
+            <label><input type="hidden" value="curdateandtime" id="curtime"></label>
+            <input class="join-btn" type="submit" value="Join The Chamber">
+        </form>
+    </div>
+    </main>
+    <footer>
+        <div class="first-half">
+            <div class="first-half-1">
+                <img class="footer-logo logo-img" src="images/icon.webp" alt="Island of victoria logo">
+                <h2>ISLAND OF VICTORIA Chamber</h2>
+                <span id="address">565 2nd, Victoria Island, Lagos. 10231</span>
+            </div>
+            <div class="first-half-2">
+                <span id="email">info@iovnigeria.org</span>
+                <span id="phone">+(234) 811 888 1888</span>
+                <span id="map">📍 Location Map</span>
+            </div>
+        </div>
+        <hr>
+        <div class="second-half">
+            <span id="footer-year">
+                <!-- JS! -->
+            </span>
+            <h2>Olamilekan K. Ajibola</h2>
+            <span>WDD 230 Project</span>
+            <span class="last-modification">
+            </span>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

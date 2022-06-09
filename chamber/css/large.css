@@ -165,4 +165,17 @@
     #gallery .photo .info{
         padding: 2rem;
     }
+    /* ////////////////////////////
+     /* Join page */
+     form{
+         width: 30rem;
+     }
+     fieldset{
+         width: 28rem;
+     }
+     #description{
+         width: 29.8rem;
+     }
+
+     
 }

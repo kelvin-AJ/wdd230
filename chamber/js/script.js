@@ -4,7 +4,8 @@ const dateEl = document.querySelector("#header-date");
 const footerEl = document.querySelector("#footer-year")
 const modEl = document.querySelector(".last-modification");
 const banner = document.querySelector(".banner");
-const visitString = document.querySelector("#visit-string")
+const visitString = document.querySelector("#visit-string");
+const hiddenInput = document.querySelector("#curtime");
 const curDate = new Date();
 const now = Math.floor(curDate/8.64e7)
 
@@ -24,8 +25,11 @@ const curDay = function(){
 const curDayofMonth = curDate.getDate()
 const curMonth = function(){
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December"]
-    return months[curDate.getMonth()]}
-const curYear = curDate.getFullYear()
+    return months[curDate.getMonth()]};
+const curYear = curDate.getFullYear();
+const curMinute = curDate.getMinutes();
+const curSecond = curDate.getSeconds();
+const curHour = curDate.getHours;
 
 dateEl.innerHTML = `${curDay()}, ${curDayofMonth} ${curMonth()} ${curYear}`;
 
@@ -48,7 +52,6 @@ if(curDay() == "Monday" || curDay() == "Tuesday"){
     banner.classList.add("hide")
 }
 
-
 // Last Visit
 window.addEventListener("load", () => {
     let dayText;
@@ -62,3 +65,5 @@ window.addEventListener("load", () => {
     }
     visitString.textContent = dayText
 });
+
+hiddenInput.setAttribute("value", `${curDay()}, ${curDayofMonth} ${curMonth()} ${curYear} | ${curHour}:${curMinute}:${curSecond}`)

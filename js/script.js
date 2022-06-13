@@ -51,13 +51,13 @@ const lessons = [{
 },
 {
     number : "08b",
-    title : "HTML Froms",
+    title : "HTML Forms",
     href : "chamber\\join.html"
 },
 {
     number : "09",
-    title : "Title",
-    href : "#"
+    title : "Working with JSON Data and the fetch API",
+    href : "Lesson_09\\prophets.html"
 },
 {
     number : "10",

@@ -57,7 +57,7 @@ const lessons = [{
 {
     number : "09",
     title : "Working with JSON Data and the fetch API",
-    href : "Lesson_09\\prophets.html"
+    href : "lesson_09\\prophets.html"
 },
 {
     number : "10",

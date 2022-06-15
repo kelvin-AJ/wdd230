@@ -7,9 +7,28 @@ const banner = document.querySelector(".banner");
 const visitString = document.querySelector("#visit-string");
 const hiddenInput = document.querySelector("#curtime");
 const curDate = new Date();
-const now = Math.floor(curDate/8.64e7)
 
+
+let count = 1;
+let dayText;
+const today = Math.floor(curDate/8.64e7);
+const formerday = Number(localStorage.getItem("lastDay"));
+const daydiff = today - formerday
+if(daydiff > 1){
+    dayText = `${Math.round(daydiff)} days ago | Visit count:${localStorage.getItem("count")}`
+}else{
+    dayText = `This is your first day visiting | Visit count:${localStorage.getItem("count")}`;
+}
+visitString.textContent = dayText
+
+
+
+
+const now = Math.floor(curDate/8.64e7)
 localStorage.setItem("lastDay", now)
+count = localStorage.getItem("count");
+count++
+localStorage.setItem("count", count);
 
 
 
@@ -53,17 +72,6 @@ if(curDay() == "Monday" || curDay() == "Tuesday"){
 }
 
 // Last Visit
-window.addEventListener("load", () => {
-    let dayText;
-    const today = Math.floor(curDate/8.64e7);
-    const formerday = Number(localStorage.getItem("lastDay"));
-    const daydiff = today - formerday
-    if(daydiff > 1){
-        dayText = `${Math.round(daydiff)} days ago`
-    }else{
-        dayText = "This is your first Visit"
-    }
-    visitString.textContent = dayText
-});
+
 
 hiddenInput.setAttribute("value", `${curDay()}, ${curDayofMonth} ${curMonth()} ${curYear} | ${curHour}:${curMinute}:${curSecond}`)

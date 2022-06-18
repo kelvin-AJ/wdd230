@@ -35,7 +35,7 @@
             <ul id="navUl">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a class="active" href="join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -47,7 +47,7 @@
         <div class="banner hide"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
     </header>
     <main>
-        <div class="main-join-area">
+        <div class="main-area main-join-area">
         <h1 class="abel-text">Join us at Island of Victoria!</h1>
         <p class="abel-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident voluptatibus nisi unde necessitatibus totam nemo laboriosam, natus perferendis at inventore fuga reprehenderit voluptatum! Hic quam est saepe delectus aperiam?
@@ -83,7 +83,9 @@
             </label>
             <label><input type="hidden" value="curdateandtime" id="curtime"></label>
             <input class="join-btn" type="submit" value="Join The Chamber">
+            
         </form>
+        <h4 class="last-visit abel-text">Last Visit: <span id="visit-string"></span></h4>
     </div>
     </main>
     <footer>
@@ -111,6 +113,9 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        hiddenInput.setAttribute("value", `${curDay()}, ${curDayofMonth} ${curMonth()} ${curYear} | ${curHour}:${curMinute}:${curSecond}`)
+    </script>
 </body>
 
 </html>

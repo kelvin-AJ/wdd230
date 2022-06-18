@@ -1,16 +1,6 @@
 {
     "directory": [
-      {
-        "ID": "IOV/001",
-        "name" :"American Business Council",
-        "membership": "Silver",
-        "address": "C&C Towers,Plot 1684,Sanusi Fafunwa Street,Victoria Island,Lagos State Nigeria",
-        "email": "info@abcnig.com",
-        "phoneNumber": "+234 805 522 9663",
-        "websiteURL": "https://www.abcnig.com",
-        "logoURL" : "../images/jsonLogos/americanbuscouncil.jpg",
-        "description": "American Business Council doing business in Nigeria for promoting Nigeria-US economic partnership"
-      },
+  
       {
         "ID": "IOV/002",
         "name" :"Economic Associates",
@@ -32,6 +22,17 @@
         "websiteURL": "http://www.firstbanknigeria.com",
         "logoURL" : "../images/jsonLogos/Fbn.jpg",
         "description": "First Bank Plc is the foremost financial institution offering general banking and money transfer services"
+      },
+      {
+        "ID": "IOV/001",
+        "name" :"American Business Council",
+        "membership": "Silver",
+        "address": "C&C Towers,Plot 1684,Sanusi Fafunwa Street,Victoria Island,Lagos State Nigeria",
+        "email": "info@abcnig.com",
+        "phoneNumber": "+234 805 522 9663",
+        "websiteURL": "https://www.abcnig.com",
+        "logoURL" : "../images/jsonLogos/americanbuscouncil.jpg",
+        "description": "American Business Council doing business in Nigeria for promoting Nigeria-US economic partnership"
       },
       {
         "ID": "IOV/004",

@@ -19,7 +19,7 @@ if(daydiff > 1){
 }else{
     dayText = `This is your first day visiting | Visit count:${localStorage.getItem("count")}`;
 }
-visitString.textContent = dayText
+visitString.textContent = dayText;
 
 
 
@@ -71,7 +71,3 @@ if(curDay() == "Monday" || curDay() == "Tuesday"){
     banner.classList.add("hide")
 }
 
-// Last Visit
-
-
-hiddenInput.setAttribute("value", `${curDay()}, ${curDayofMonth} ${curMonth()} ${curYear} | ${curHour}:${curMinute}:${curSecond}`)

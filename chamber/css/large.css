@@ -177,5 +177,21 @@
          width: 29.8rem;
      }
 
-     
+     /* ////////////////////////// */
+     /* Directory */
+     .directory-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem;
+     }
+     .company:hover{
+        padding: 0.3rem;
+        background-color:  #141516;
+        color: whitesmoke;
+        transition: all 0.3s;
+     }
+     .company{
+        padding:0px;
+     }
 }

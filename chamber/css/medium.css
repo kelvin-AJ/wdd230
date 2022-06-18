@@ -114,4 +114,30 @@
     
 
     #gallery .right-photo{background-color: rgb(182, 182, 182);}
+
+    .company{
+        display: grid;
+        justify-items: left;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding:2.5rem;
+        text-align: left;
+        background-color: white;
+        color: #141516;
+        margin: 20px;
+        box-shadow: 0px 0px 3px #141516;
+    }
+    .company-img{
+        align-self: center;
+        width: 180px;
+    }
+    .company:nth-child(even){
+        background-color: white;
+        color: #141516;
+    }
+  
+    .company-info{
+        grid-column: 2/4;
+        margin-left: 10px;
+    }
 }

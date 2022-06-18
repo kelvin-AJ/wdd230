@@ -60,6 +60,11 @@ const lessons = [{
     href : "lesson_09\\prophets.html"
 },
 {
+    number : "09b",
+    title : "The Directory Page",
+    href : "chamber\\directory.html"
+},
+{
     number : "10",
     title : "Title",
     href : "#"

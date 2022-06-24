@@ -113,10 +113,9 @@ main {
 }
 
 .hero {
-    /* background: url("../images/banner.jpg"), rgba(128, 128, 128, 0.678); */
-    /* background-blend-mode: darken; */
-    /* background-position: center; */
-    /* background-size: cover; */
+    /* background: url("../images/hero-large.jpg");
+    background-position: center;
+    background-size: cover; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60% 1fr;
@@ -186,6 +185,8 @@ main div#hero{padding: 0px;}
 
 .weather img {
     height: 5rem;
+    align-self: center;
+    justify-self: center;
 }
 .open ul {
     display: block;

@@ -116,7 +116,7 @@
         margin: 10px;
         height: 96%;
         display: grid;
-        row-gap: 5rem;
+        row-gap: 3rem;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
     }
@@ -130,11 +130,10 @@
         display: block;
         display: grid;
         justify-items: center;
-        background: rgb(196, 196, 196);
+        background: rgb(214, 238, 245);
         color: #010d14;
         width: auto;
         height: fit-content;
-        box-shadow: 0 0 5px white;
         padding-bottom: 1rem;
         }
 

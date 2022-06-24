@@ -66,8 +66,8 @@ const lessons = [{
 },
 {
     number : "10",
-    title : "Title",
-    href : "#"
+    title : "Weather API",
+    href : "lesson_10\\weather-api.html"
 },
 {
     number : "11",

@@ -71,3 +71,4 @@ if(curDay() == "Monday" || curDay() == "Tuesday"){
     banner.classList.add("hide")
 }
 
+

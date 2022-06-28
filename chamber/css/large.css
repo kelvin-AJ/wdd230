@@ -43,6 +43,8 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-gap: 10px;
+        padding-top: 2rem;
+        margin: 0px;
     }
 
     .placeholder-item {
@@ -53,20 +55,22 @@
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
-        /* height: 80%;
-        margin-top: 12px; */
+        width: 90%;
+        height: 84%;
     }
 
     .weather {
         grid-column: 1/2;
         grid-row: 2/3;
-        width: 80%;
+        width: 90%;
+        height: 84%;
     }
 
     .join {
         grid-column: 1/2;
         grid-row: 3/4;
-        width: 85%;
+        width: 90%;
+        height: 80%;
     }
     .join button{
         display: block;
@@ -98,15 +102,23 @@
         width: 100%;
         margin-bottom: 30px;
         transition: all 0.2s;
+        z-index: 7;
 
     }
     .news {
         grid-column: 2/4;
-        width: 95%;
+        width: 94%;
         padding: 1.2rem;
         grid-row: 3/4;
     }
-
+    #overlay{
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+        z-index: 6;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(36, 36, 36, 0.548);
+    }
     .placeholder-spotlights {
         width: 90%;
         height: 97%;
@@ -133,8 +145,7 @@
         background: rgb(214, 238, 245);
         color: #010d14;
         width: auto;
-        height: fit-content;
-        padding-bottom: 1rem;
+        height: 90%;
         }
 
     /* //////////////////////////////////////////// */

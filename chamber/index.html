@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <header class="header-grid">
         <div class="logo-info"><img class="logo-img" src="images/icon.webp" alt="island of victoria chamber logo">
@@ -46,6 +45,7 @@
         <div class="banner hide"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p> <div id="hex">&#10005;</div></div>
     </header>
     <main>
+        <div id="overlay" class="hide"></div>
         <div class="block hero" id="hero">
             <picture id="heroPhoto">
                <source media="(min-width: 1000px)" srcset="images/hero-large.jpg">
@@ -72,11 +72,16 @@
         </div>
         <div class="block join">
             <button>Join Us!</button>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            <p>
+                <div class="numbers">With over <span>74</span> differnt firms.</div>
+                Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div class="block news sub">
             <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus, eveniet eius sapiente, corporis
+            <p>
+                <div class="numbers">Join us today and we'd be <span>1463</span> and <span>1</span> members.</div>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus, eveniet eius sapiente, corporis
                 delectus amet, minima provident voluptas harum adipisci est labore veritatis sed assumenda dolor. Voluptatem ea
                 nostrum, dolores ipsam .
             </p>
@@ -123,13 +128,14 @@
             <span id="footer-year">
                 <!-- JS! -->
             </span>
-            <h2>Olamilekan K. Ajibola</h2>
+            <span> | Olamilekan K. Ajibola | </span>
             <span>WDD 230 Project</span>
             <span class="last-modification">
             </span>
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/intersectionobserver.js"></script>
     <script src="js/windchill.js"></script>
 </body>
 

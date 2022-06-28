@@ -8,6 +8,9 @@ const visitString = document.querySelector("#visit-string");
 const hiddenInput = document.querySelector("#curtime");
 const removeBannerbtn = document.querySelector("#hex");
 const curDate = new Date();
+const joinBtn = document.querySelector("#join-btn");
+const overlay = document.querySelector("#overlay");
+
 
 // Last Visit
 let count = 1;
@@ -82,4 +85,12 @@ if(curDay() == "Monday" || curDay() == "Tuesday"){
 // Remove Banner
 removeBannerbtn.addEventListener("click", function(){
     banner.style.display = "none";
+});
+
+// Join btn animation
+joinBtn.addEventListener("mouseover", function(){
+    overlay.classList.remove("hide");
+});
+joinBtn.addEventListener("mouseout", function(){
+    overlay.classList.add("hide");
 });

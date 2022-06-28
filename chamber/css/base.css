@@ -119,9 +119,6 @@ main {
 }
 
 .hero {
-    /* background: url("../images/hero-large.jpg");
-    background-position: center;
-    background-size: cover; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60% 1fr;
@@ -236,7 +233,6 @@ button :nth-child(2) {
 .block {
     color: gray;
     height: 15rem;
-    /* width: 85%; */
     margin: 10px;
     padding: 1rem;
     font-family: 'Abel', sans-serif;
@@ -244,7 +240,6 @@ button :nth-child(2) {
 }
 
 .placeholder-spotlights {
-
     background: #042b42;
     color: gray;
     height: fit-content;
@@ -306,8 +301,11 @@ hr {
 
 .hero button#join-btn:hover {
     transition: all 0.2s;
-    color: #FFB30F;
-    background-color: black;
+    color: #010d14;
+    background-color: #ce910f;
+    padding: 1.2rem;
+    height: 4rem;
+    width: 30rem;
 }
 
 .event:hover {

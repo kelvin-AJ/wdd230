@@ -107,6 +107,7 @@ nav ul li a {
     text-align: center;
     padding-top: 1rem;
     font-weight: bold;
+    transition:ease 0.5s;
 }
 
 nav ul {
@@ -326,11 +327,13 @@ button span:hover {
 
 .noview{
     opacity: 10%;
+    filter: blur(20px);
     transform:translateY(20rem);
     transition: all 0.5s;
 }   
 .view{
     opacity: 100%;
+    filter: blur(0px);
     transform:translateY(0rem);
 }
 
@@ -437,6 +440,9 @@ label{
     background-color: #010d14;
 }
 /* Directory Page */
+.switch-box{
+    display: none;
+}
 .company{
     display: grid;
     justify-items: center;

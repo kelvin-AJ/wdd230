@@ -123,17 +123,66 @@
 
     #gallery .right-photo{background-color: rgb(182, 182, 182);}
 
-    .company{
+
+
+    .switch-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 7rem;
+        margin: 0 auto;
+        padding: 2px;
+        margin-bottom: 10px;
+    }
+    .switch-box img.active-switch{
+        background-color: #7e869175;
+        border-radius: 7px;
+    }
+    .switch-box img:hover{
+        background-color: #45494e1a;
+        border-radius: 7px;
+        transition:ease 0.5s;
+    }
+    .grid-company{
         display: grid;
         justify-items: left;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+        margin: 20px;
+        box-shadow: 0px 0px 3px #141516;
+    }
+    .list-company{
+        display: grid;
+        grid-template-columns: 0.1fr 2fr;
+        grid-row: 1fr;
+        box-shadow: none;
+        border: none;
+    }
+    .list-company.company:nth-child(even){
+        background-color: #45494e4b;
+    }
+    .list-info{
+        display: grid;
+        grid-template-columns: 0.9fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+    .list-info ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .list-info ul li:nth-child(3){
+        display: none;
+    }
+    .list-company .company-img{
+        display: none;
+    }
+    .company{
+        
         padding:2.5rem;
         text-align: left;
         background-color: white;
         color: #141516;
-        margin: 20px;
-        box-shadow: 0px 0px 3px #141516;
+
     }
     .company-img{
         align-self: center;

@@ -152,7 +152,10 @@ main div#hero{padding: 0px;}
     color: #FFB30F;
 }
 
-.hero button#join-btn{
+.hero #join-btn{
+    text-align: center;
+    display: grid;
+    align-items: center;
     font-family: 'Abel', monospace;
     background-color: #141516;
     margin: 1rem;
@@ -167,7 +170,7 @@ main div#hero{padding: 0px;}
     animation-iteration-count: 1;
     animation-duration: 1s;
 }
-.hero button#join-btn a{
+.hero #join-btn a{
     color: inherit;
     text-decoration: inherit;
     width: 100%;

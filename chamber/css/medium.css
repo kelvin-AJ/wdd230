@@ -39,7 +39,7 @@
         display: grid;
        grid-template-columns: repeat(2, 1fr);
        height: 16rem;
-       width: 100%;
+       width: 95%;
 
     }
 
@@ -48,18 +48,17 @@
      margin: 5px;
      }
             
-     .spotlight img {
-     width: 70%;
-    }
-    .join button {
+    .join a {
     background-color: #45494E;
     padding: 1rem;
-    width: 100%;
+    width: 95%;
     color: orange;
     box-shadow: 0px 0px 5px black;
+    text-align: center;
+    text-decoration: none;
 }
     .join {
-        width: 100%;
+        width: 95%;
         display: grid;
     grid-template-rows: 4rem 1fr;
     align-items: center;
@@ -70,7 +69,7 @@
     background-blend-mode: soft-light;
      background-size: cover;
     }
-    .join button:hover {
+    .join a:hover {
     background-color: #0B7AB8;
     font-weight: bolder;
     }
@@ -101,10 +100,11 @@
     }
 
     .second-half {
-        display: flex;
+        flex-direction: row;
     }
 
     .second-half h2 {
+        
         margin: 0px;
         padding: 0px 4px 0px 4px;
         border-left: 2px solid whitesmoke;
@@ -156,6 +156,7 @@
         grid-row: 1fr;
         box-shadow: none;
         border: none;
+        font-size: smaller;
     }
     .list-company.company:nth-child(even){
         background-color: #45494e4b;

@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 2rem;
 }
 .abel-text{
     font-family: 'Abel', sans-serif;
@@ -169,6 +169,7 @@ main div#hero{padding: 0px;}
     animation-delay: 0.01s;
     animation-iteration-count: 1;
     animation-duration: 1s;
+    text-decoration: none;
 }
 .hero #join-btn a{
     color: inherit;
@@ -265,7 +266,9 @@ button :nth-child(2) {
         height: fit-content;
         padding-bottom: 1rem;
 }
-
+.spotlight img{
+    height: 50px;
+}
 .join {
     display: none;
 }
@@ -288,6 +291,8 @@ footer {
 }
 
 .second-half {
+    display: flex;
+    flex-direction: column;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -297,19 +302,27 @@ footer {
 
 hr {
     width: 90%;
+    border: 1px solid #fab727;
+    background-color: #fab727;
+}
+footer hr{
+    border: 1px solid #2782fa;
+    background-color: #2782fa;
 }
 .banner #hex:hover{
     background-color: #0101034b;
     font-weight: bolder;
 }
 
-.hero button#join-btn:hover {
+.hero #join-btn:hover {
     transition: all 0.2s;
     color: #010d14;
     background-color: #ce910f;
-    padding: 1.2rem;
-    height: 4rem;
-    width: 30rem;
+    font-weight: bolder;
+    height: 3rem;
+}
+.hero #join-btn:active{
+    padding: 0.7px;
 }
 
 .event:hover {
@@ -371,7 +384,7 @@ main #gallery{
     padding: 1rem;
 }
 
-/* Join */
+/* Join Page*/
 #thanks{
     font-size: 10vw;
     text-align: center;
@@ -383,16 +396,15 @@ main #gallery{
 .main-join-area{
     display: grid;
     justify-items: center;
-    width: 100vw;
-    max-width: 40rem;
 }
 form{
-    
+    animation-name: slideup;
+    animation-duration: 0.5s;
     background-color: white;
     padding: 10px;
     margin-top: 10px;
     width: 90vw;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 4px grey;
 }
 
 .hy{
@@ -447,6 +459,8 @@ label{
     display: none;
 }
 .company{
+    animation-name: slideup;
+    animation-duration: 0.5s;
     display: grid;
     justify-items: center;
     padding:2.5rem;
@@ -480,6 +494,52 @@ label{
 .Bronze {
     filter: invert(42%) sepia(180%) saturate(202%) hue-rotate(0deg) brightness(119%) contrast(119%);
 }
+
+/* Contact Page */
+iframe{
+    margin: 0 auto;
+    width: 80vw;
+}
+.contact-main-area{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+.contact-info, .talk{
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #FFB30F;
+    text-align: center;
+    font-size: larger;
+}
+.talk{
+    font-size: 1.6rem;
+}
+.contact-form{
+    box-shadow: none;
+    background-color: whitesmoke;
+}
+.contact-form input, .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.contact-form .join-btn{
+    background-color: #042b42;
+}
+.contact-form .join-btn:hover{
+    transition: all 0.3s;
+    background-color: #141516;
+    color: #fab727;
+    font-weight: bolder;
+}
+.talk{
+    
+    padding: 1.2rem;
+}
+
 @keyframes slidein{
     from{
         transform: translateX(30vw);
@@ -490,5 +550,12 @@ label{
     from{
         transform: translateX(-30vw);
         opacity: 0%;
+    }
+}
+
+@keyframes slideup{
+    from{
+        transform: translateY(20vh);
+        opacity: 10%;
     }
 }

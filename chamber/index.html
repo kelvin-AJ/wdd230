@@ -29,14 +29,14 @@
             <a href="www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>
             <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
         </div>
-        <button id="nav-btn"><span>&#9776;</span><span>X</span></button>
+        <button id="nav-btn"><span>&#9776;</span><span>&#10005;</span></button>
         <nav>
             <ul id="navUl">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="header-date">
@@ -45,7 +45,6 @@
         <div class="banner hide"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p> <div id="hex">&#10005;</div></div>
     </header>
     <main>
-        <div id="overlay" class="hide"></div>
         <div class="block hero" id="hero">
             <picture id="heroPhoto">
                <source media="(min-width: 1000px)" srcset="images/hero-large.jpg">
@@ -54,8 +53,8 @@
                 <img src="images/hero-base.jpg" alt="Chamber members in meeting">
             </picture>
             <h2>Welcome to the <br/><span>Island of Victoria</span></h2>
-            <button id="join-btn">Join the Chamber
-            </button>
+            <a href="join.html" id="join-btn">Join the Chamber
+            </a>
             </div>
         <div class="block event sub">
             <h2>Ribbon Cutting</h2>
@@ -72,8 +71,8 @@
             <p>Wind Chill:<span id="wind-chill">N/A</span></p>
         </div>
         <div class="block join">
-            <button>Join Us!</button>
-            <div class="numbers">With over <span>74</span> differnt firms.</div>
+            <a href="join.html">Join Us!</a>
+            <div class="numbers">With over <span>74</span> different firms.</div>
             <p>
                 Discover how to join the chamber of commerce and how it will benefit your organization!
             </p>
@@ -82,32 +81,19 @@
             <h2>News Release</h2>
             <div class="numbers">Join us today and we'd be <span>1463</span> and <span>1</span> members.</div>
             <p>    
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus, eveniet eius sapiente, corporis
-                delectus amet, minima provident voluptas harum adipisci est labore veritatis sed assumenda dolor. Voluptatem ea
-                nostrum, dolores ipsam .
+                The CBN's economic report for the month of February 2022, noted that the naira exchange rate at the I&E window remained relatively stable in the review period despite the upscaling of cyclical and structural demand factors amidst foreign exchange supply constraints. 
             </p>
         </div>
         <div class="placeholder-spotlights" id="spotlights">
-            <div class="spotlight">
-                <h2>Arnegy</h2>
-                <img src="images/arnegy.webp" alt="arnegy logo">
-                <hr>
-                <p>info@arnegyteam.com</p>
-                <p>+234 123 -1234 | Website</p>
+            <div class="spotlight" id="spot-1">
+                
             </div>
-            <div class="spotlight">
-                <h2>Alibert</h2>
-                <img src="images/alibert.webp" alt="arnegy logo">
-                <hr>
-                <p>info@alibertteam.com</p>
-                <p>+234 123 -1234 | Website</p>
+            <div class="spotlight" id="spot-2">
+                
             </div>
             <div class="spotlight spot-3" id="spot-3">
-                <h2>Gatemark</h2>
-                <img src="images/gatemark.webp" alt="arnegy logo">
-                <hr>
-                <p>info@gatemarkgroup.com</p>
-                <p>+234 123 -1234 | Website</p></div>
+            </div>
+                
         </div>
     </main>
     <footer>
@@ -137,7 +123,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/intersectionobserver.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/indexExtra.js"></script>
 </body>
 
 </html>

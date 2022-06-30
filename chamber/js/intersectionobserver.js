@@ -38,9 +38,9 @@ const countUp = node => {
     let num = 0;
     setInterval(() => {
         if(num < value)
-        num++;
+        num = num + 5;
         node.textContent = num;
-    }, 1);
+    }, 0.5);
 };
 textprefernces = {
     threshold: 1,

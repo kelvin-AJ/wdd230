@@ -8,8 +8,6 @@ const visitString = document.querySelector("#visit-string");
 const hiddenInput = document.querySelector("#curtime");
 const removeBannerbtn = document.querySelector("#hex");
 const curDate = new Date();
-const joinBtn = document.querySelector("#join-btn");
-const overlay = document.querySelector("#overlay");
 
 
 // Last Visit
@@ -18,18 +16,15 @@ let dayText;
 const today = Math.floor(curDate/8.64e7);
 const formerday = Number(localStorage.getItem("lastDay"));
 const daydiff = today - formerday
-if(daydiff > 1){
-    dayText = `${Math.round(daydiff)} days ago | Visit count:${localStorage.getItem("count")}`
-}else{
-    dayText = `This is your first day visiting | Visit count:${localStorage.getItem("count")}`;
-}
+
+dayText = `${Math.round(daydiff)} days ago | Visit count:${localStorage.getItem("count")}`
 visitString.textContent = dayText;
 
 
 
 
-const now = Math.floor(curDate/8.64e7)
-localStorage.setItem("lastDay", now)
+const now = Math.floor(curDate/8.64e7);
+localStorage.setItem("lastDay", now);
 count = localStorage.getItem("count");
 count++
 localStorage.setItem("count", count);
@@ -76,9 +71,9 @@ modEl.innerHTML = `Last Updated: ${modMonth}/${modDay}/${modYear} ${modhour}:${m
 
 // Banner
 if(curDay() == "Monday" || curDay() == "Tuesday"){
-    banner.classList.remove("hide")
+    banner.classList.remove("hide");
 }else{
-    banner.classList.add("hide")
+    banner.style.display = "none";
 };
 
 
@@ -87,10 +82,3 @@ removeBannerbtn.addEventListener("click", function(){
     banner.style.display = "none";
 });
 
-// Join btn animation
-joinBtn.addEventListener("mouseover", function(){
-    overlay.classList.remove("hide");
-});
-joinBtn.addEventListener("mouseout", function(){
-    overlay.classList.add("hide");
-});

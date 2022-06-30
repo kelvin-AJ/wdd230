@@ -151,7 +151,10 @@ main div#hero{padding: 0px;}
 .sub h2 {
     color: #FFB30F;
 }
-
+.numbers span{
+    color: orange;
+    font-weight: 1000;
+}
 .hero #join-btn{
     text-align: center;
     display: grid;

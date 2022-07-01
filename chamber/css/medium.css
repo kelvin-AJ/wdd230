@@ -122,23 +122,6 @@
 
 
 
-    .switch-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 7rem;
-        margin: 0 auto;
-        padding: 2px;
-        margin-bottom: 10px;
-    }
-    .switch-box img.active-switch{
-        background-color: #7e869175;
-        border-radius: 7px;
-    }
-    .switch-box img:hover{
-        background-color: #45494e1a;
-        border-radius: 7px;
-        transition:ease 0.5s;
-    }
     .grid-company{
         display: grid;
         justify-items: left;
@@ -150,9 +133,7 @@
     .list-company{
         display: grid;
         grid-template-columns: 0.1fr 2fr;
-        box-shadow: none;
-        border: none;
-        font-size: smaller;
+        
     }
     .list-company.company:nth-child(even){
         background-color: #afb9c40a;
@@ -167,12 +148,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .list-info ul li:nth-child(3){
-        display: none;
-    }
-    .list-company .company-img{
-        display: none;
-    }
+ 
     .company{
         
         padding:2.5rem;

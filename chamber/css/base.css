@@ -467,9 +467,42 @@ label{
     background-color: #010d14;
 }
 /* Directory Page */
+
+
 .switch-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 7rem;
+    margin: 0 auto;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.switch-box img.active-switch{
+    background-color: #7e869175;
+    border-radius: 7px;
+}
+.switch-box img:hover{
+    background-color: #45494e1a;
+    border-radius: 7px;
+    transition:ease 0.5s;
+}
+
+.list-company{
+    box-shadow: none;
+    border: none;
+    font-size: smaller;
+}
+.list-company.company:nth-child(even){
+    background-color: #1315168e;
+}
+
+.list-info ul li:nth-child(3){
     display: none;
 }
+.list-company .company-img{
+    display: none;
+}
+
 .company{
     animation-name: slideup;
     animation-duration: 0.5s;

@@ -31,6 +31,8 @@ body {
     border-radius: 7px;
     overflow: hidden;
     align-items: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .student-img {
@@ -65,6 +67,8 @@ a {
 
 .footer-grid {
     text-align: center;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .footer-head {

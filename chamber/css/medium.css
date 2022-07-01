@@ -150,13 +150,12 @@
     .list-company{
         display: grid;
         grid-template-columns: 0.1fr 2fr;
-        grid-row: 1fr;
         box-shadow: none;
         border: none;
         font-size: smaller;
     }
     .list-company.company:nth-child(even){
-        background-color: #45494e4b;
+        background-color: #afb9c40a;
     }
     .list-info{
         display: grid;

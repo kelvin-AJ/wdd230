@@ -135,21 +135,23 @@ main div#hero{padding: 0px;}
 .hero h2,
 .sub h3 {
     font-size: 2rem;
-    color: whitesmoke;
+    color: white;
 }
 .hero h2{
     grid-column: 1/3;
     grid-row: 1/2;
     padding: 1rem;
+    background-color: #0000007c;
+    border-top: 1px solid #fab727;
     animation-name: slidein;
     animation-delay: 0.01s;
     animation-iteration-count: 1;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 .hero h2 span,
-.sub h2 {
-    color: #FFB30F;
+.sub h2, .spotlight {
+    color: #ffbb29;
 }
 .numbers span{
     color: orange;
@@ -159,10 +161,12 @@ main div#hero{padding: 0px;}
     text-align: center;
     display: grid;
     align-items: center;
+    font-weight: bolder;
+    font-size: larger;
     font-family: 'Abel', monospace;
-    background-color: #141516;
+    background-color: #010d1460;
     margin: 1rem;
-    color: #088dda;
+    color: #fab727;
     box-shadow: 0px 0px 5px black;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -263,7 +267,7 @@ button :nth-child(2) {
 .spotlight {
     display: grid;
         justify-items: center;
-        background: rgb(214, 238, 245);
+        background: whitesmoke;
         color: #010d14;
         width: auto;
         height: fit-content;
@@ -343,11 +347,13 @@ button span:hover {
 .last-visit{
     color: #141516;
 }
-
+footer .last-visit{
+    color: whitesmoke;
+}
 .noview{
     opacity: 10%;
     filter: blur(20px);
-    transform:translateY(20rem);
+    transform:translateY(10rem);
     transition: all 0.5s;
 }   
 .view{
@@ -389,8 +395,10 @@ main #gallery{
 
 /* Join Page*/
 #thanks{
-    font-size: 10vw;
-    text-align: center;
+    font-size: 2rem;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+   padding-left: 8rem;
 }
 .abel-text span#orange{
     color: #FFB30F;
@@ -411,7 +419,8 @@ form{
 }
 
 .hy{
-    color: #ff2b0f;
+    color: rgb(36, 36, 36);
+    font-weight: bolder;
 }
 fieldset{
     border-radius: 3px;
@@ -545,7 +554,7 @@ iframe{
 
 @keyframes slidein{
     from{
-        transform: translateX(30vw);
+        transform: translateX(10vw);
         opacity: 0%;
     }
 }

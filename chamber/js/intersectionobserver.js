@@ -1,13 +1,10 @@
-const allimages = document.querySelectorAll("source[datasrc]");
+const allimages = document.querySelectorAll("source[srcset]");
 const numberselement = document.querySelectorAll(".numbers span");
 
 const loadImage = image => {
-    const src = image.getAttribute("datasrc");
-    image.setAttribute("srcset", src);
-    // image.parentNode.classList.remove("noview");
     image.parentNode.classList.add("view");
     image.onload = () => {
-        image.removeAttribute("datasrc");
+        image.parentNode.classList.remove("noview");
     }
 };
 prefernces = {

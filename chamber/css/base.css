@@ -544,6 +544,8 @@ label{
 iframe{
     margin: 0 auto;
     width: 80vw;
+    animation-name: slideup;
+    animation-duration: 1.2s;
 }
 .contact-main-area{
     grid-row: 1/-1;
@@ -553,6 +555,8 @@ iframe{
     align-items: center;
 }
 .contact-info, .talk{
+    animation-name: slideup;
+    animation-duration: 1.2s;
     margin: 1rem;
     display: grid;
     gap: 1rem;

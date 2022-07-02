@@ -76,8 +76,8 @@ const lessons = [{
 },
 {
     number : "11",
-    title : "Title",
-    href : "#"
+    title : "Complete Chamber Project",
+    href : "chamber\\index.html"
 },
 ];
 
